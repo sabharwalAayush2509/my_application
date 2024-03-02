@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: const Text(
-          'My Application',
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-      body: const Center(
-        child: Image(
-          image: AssetImage('assets/my_application_icon.png'),
-        ),
-      ),
-    ),
-  ));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(),
+    );
+  }
 }
