@@ -74,9 +74,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: rubik
+    - family: rubik_medium
       fonts:
         - asset: fonts/rubik_medium.ttf
+    - family: rubik_regular
+      fonts:
         - asset: fonts/rubik_regular.ttf
   #
   # For details regarding fonts from package dependencies,
